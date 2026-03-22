@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* ヘッダー */
+header {
+  background: #fce4ec;
+  padding: 20px;
+  text-align: center;
+}
+
+/* セクション共通 */
+section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #c2185b;
+}
+
+/* About */
+.about p {
+  text-align: center;
+}
+
+/* Works */
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.card {
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 10px;
+}
+
+.card p {
+  padding: 0 10px 10px;
+  font-size: 0.9em;
+}
+
+/* Skills */
+.skills ul {
+  list-style: none;
+  text-align: center;
+}
+
+.skills li {
+  margin: 5px 0;
+}
+
+/* フッター */
+footer {
+  background: #fce4ec;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+/* スマホ */
+@media (max-width: 768px) {
+  .works-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
